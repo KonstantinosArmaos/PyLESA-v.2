@@ -15,7 +15,7 @@ In this version, a solar thermal output tool is added to allow for more flexibil
 # Running PyLESA
 
 1.	Install Python3 (code has been tested on Python 3.9.7 but should work with similar) and dependencies in requirements.txt. Download source code.
-2.  It is recommended to use an Anaconda Installation (https://www.anaconda.com/products/individual) as these will contain the majority of required packages. Set up a virtual enviroment using Conda (https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the requirements.yml file.
+2.  It is recommended to use an Anaconda Installation (https://www.anaconda.com/products/individual) as these will contain the majority of required packages. Set up a virtual enviroment using Conda (https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the requirements.yml file. (requirements file has not been updated in this version)
 
         conda env create -f requirements.yml
 
