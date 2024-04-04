@@ -456,35 +456,6 @@ class Solarthermal(object):
         df.columns = ['ST power']
         return df
 
-        """for key in mean_day:
-            delta = np.radians(23.45) * np.sin(2 * np.pi * (mean_day[key]+284)/365)
-            omega_s = min([np.arccos( -np.tan(np.radians(self.latitude)) * np.tan(delta)), np.arccos( -np.tan(np.radians(self.latitude)-np.radians(self.surface_tilt)) * np.tan(delta))])
-            R_b = (np.cos(np.radians(self.latitude)-np.radians(self.surface_tilt)) * np.cos(delta) * omega_s + np.pi / 180 * omega_s * np.sin(np.radians(self.latitude)-np.radians(self.surface_tilt)) * np.sin(delta)) / (np.cos(np.radians(self.latitude)) * np.cos(delta) * np.sin(omega_s) + np.pi / 180 * omega_s * np.sin(np.radians(self.latitude)) * np.sin(delta))
-            # x0.27778/30 to convert from kWh to MJ and from monthly to daily 
-            H_t = 1/1000*(((weather['ghi'].iloc[key-1] - weather['dhi'].iloc[key-1]) * R_b + 0.5 * weather['dhi'].iloc[key-1] * (1 + np.cos(self.surface_tilt)) + 0.5 * self.ground_reflectivity * weather['ghi'].iloc[key-1] * (1 - np.cos(self.surface_tilt))) / (30 * 0.27778))
-            dhw_correction = (11.6 + 1.18 * 55 + 3.86 * weather['water_temperature'].iloc[key-1] - 2.32 * weather['air_temperature'].iloc[key-1]) / (100 - weather['air_temperature'].iloc[key-1])
-            x_fchart = dhw_correction * collector_constants['fr_ul'] * collector_constants['fr_ratio'] * (100 - weather['air_temperature'].iloc[key-1]) * 2592000 * self.collector_area / (monthly_load[key]/0.27778) / 10**6
-            y_fchart = collector_constants['fr_ta'] * collector_constants['ta_ratio'] * collector_constants['fr_ratio'] * H_t * days_month[key] * self.collector_area / (monthly_load[key]/0.27778)
-            solar_fraction = 1.029 * y_fchart - 0.065 * x_fchart - 0.245 * y_fchart ** 2 + 0.0018 * x_fchart ** 2 + 0.02 * y_fchart ** 3
-
-            delta_list.append(delta)
-            omega_s_list.append(omega_s)
-            R_b_list.append(R_b)
-            H_t_list.append(H_t)
-            x_fchart_list.append(x_fchart)
-            y_fchart_list.append(y_fchart)
-            f_list.append(solar_fraction)
-        
-        print ('delta', delta_list)
-        print ('omega', omega_s_list)
-        print ('rb', R_b_list)
-        print ('ht', H_t_list)
-        print ('X: ', x_fchart_list)
-        print ('Y: ', y_fchart_list)
-        print ('solar fractions: ', f_list)
-
-        return f_list"""
-
 class Windturbine(object):
 
     def __init__(self, turbine_name, hub_height,
