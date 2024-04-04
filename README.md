@@ -22,11 +22,13 @@ In this version, a solar thermal output tool is added to allow for more flexibil
 3.  Define and gather data on the local energy system to be modelled including resources, demands, supply, storage, grid connection, and control strategy. Define the increments and ranges to be modelled within the required parametric design. Input all this data using one of the template Excel Workbooks from the 'inputs' folder.
 4.	Optionally run the demand (heat_demand.py and electricity_demand.py) and resource assessment methods (see PhD thesis for details) to generate hourly profiles depending on available data. Input generated profiles into the Excel Workbook.
 5.	Using a terminal (e.g. PowerShell) navigate to the relevant directory, e.g. “…/PyLESA-1.1/PyLESA”, enter “python run.py” and when prompted enter the input Excel workbook filename (excluding the file extension “.xlsx”).
-6.	After the run is complete, open the Outputs folder to view the KPI 3D plots and/or operational graphs, as well as .csv outputs. (Note an error will be raised if only one simulation combination is run, as 3D plots cannot be processed.) There are also raw outputs.pkl file for each simulation combination which contains a vast range of raw outputs.
+6.	After the run is complete, open the Outputs folder to view the KPI 3D plots and/or operational graphs, as well as .csv outputs. (Note an error will be raised if only one simulation combination is run, as 3D plots cannot be processed). For this reason, 3D plots may need to be edited and commented accordingly when running different combinations (including or not solar thermal, heat pumps etc.). This can be done either in outputs.py directly or by running test_outputs.py after the end of the simulation to get the specific plots needed. There are also raw outputs.pkl file for each simulation combination which contains a vast range of raw outputs. 
 
-Video on running PyLESA: https://youtu.be/QsJut9ftCT4
+Video on running PyLESA (without solar thermal): https://youtu.be/QsJut9ftCT4
 
 # References
+
+(All references are before the solar thermal tool addition)
 
 PhD Thesis - Modelling and design of local energy systems incorporating heat pumps, thermal storage, future tariffs, and model predictive control (https://doi.org/10.48730/8nz5-xb46)
 
