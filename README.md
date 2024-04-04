@@ -2,9 +2,11 @@
 
 PyLESA stands for Python for Local Energy Systems Analysis and is pronounced "pai-lee-suh".
 
-PyLESA is an open source tool capable of modelling local energy systems containing both electrical and thermal technologies. It was developed with the aim of aiding the design of local energy systems.
+PyLESA is an open source tool capable of modelling local energy systems containing both electrical and thermal technologies. It was developed with the aim of aiding the design of local energy systems. 
 
 This tool was first developed as part of a PhD, "Modelling and Design of Local Energy Systems Incorporating Heat Pumps, Thermal Storage, Future  Tariffs, and Model Predictive Control" by Andrew Lyden.
+
+Original PyLESA: https://github.com/andrewlyden/PyLESA
 
 PyLESA-v.2 was further developed as part of a MEng thesis at the University of Edinburgh, "Modelling heating and hot water generation options for an energy community" by Konstantinos Armaos.
 
